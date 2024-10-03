@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>I Will See You</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+            color: #FF69B4; /* Pink text color */
+        }
+  </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  <h1 id="message"></h1>
+  <img src="https://i.pinimg.com/564x/ca/86/ff/ca86fff6ee859e3cc3d00af356f56ab7.jpg" alt="Smile Cat" style="display: block; margin: 0 auto;">
+
+  <script>
+    const date = localStorage.getItem("date");
+    const time = localStorage.getItem("time");
+    document.getElementById("message").innerHTML = `I will see you on ${date} at ${time}!`;
+  </script>
+</body>
+</html>

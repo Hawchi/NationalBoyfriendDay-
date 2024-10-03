@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Availability</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="date"], input[type="time"] {
+      width: 200px;
+      height: 30px;
+      font-size: 16px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 200px;
+      height: 50px;
+      font-size: 19px;
+      padding: 10px;
+      background-color: #FF69B4;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #FFC0CB;
+    }
+
+    h1 {
+            color: #FF69B4; /* Pink text color */
+        }
+  </style>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <h1>When are you free?</h1>
+
+  <label for="date">Select date:</label>
+  <input type="date" id="date" name="date" required>
+
+  <label for="time">Select time:</label>
+  <input type="time" id="time" name="time" required>
+
+  <br><br>
+
+  <button type="button" id="myButton">(　･ω･)☞CLICK ME</button>
+
+  <script>
+    document.getElementById("myButton").addEventListener("click", function() {
+      const dateInput = document.getElementById("date");
+      const timeInput = document.getElementById("time");
+      const date = dateInput.value;
+      const time = timeInput.value;
+
+      if (date === "" || time === "") {
+        alert("Pookie please choose a date... or dont u love me anymore?(｡T ω T｡)");
+      } else {
+        localStorage.setItem("date", date);
+        localStorage.setItem("time", time);
+        window.location.href = "dinner.html";
+      }
+    });
+  </script>
+</body>
+</html>

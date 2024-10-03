@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes Page</title>
+    <style>
+        button {
+            background-color: #FF69B4; /* Pink background color */
+            color: #FFFFFF; /* White text color */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Add padding */
+            font-size: 16px; /* Increase font size */
+            cursor: pointer; /* Change cursor shape on hover */
+            border-radius: 10px; /* Make the buttons slightly rounded */
+        }
+        
+        button:hover {
+            background-color: #FFC0CB; /* Light pink background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://i.pinimg.com/564x/c7/81/32/c78132541b9fa1979d972cbe257c85ef.jpg" alt="Cute Cat" style="width: 500px; height: 500px; margin: 50px auto; display: block;">
+        <h1 style="color: #FF69B4; text-align: center;">YAAAYY! GO TO THE NEXT PAGE POOKIE</h1>
+        <button id="nextButton" style="display: block; margin: 50px auto;">Click me</button>
+    </div>
+
+    <script>
+        document.getElementById("nextButton").addEventListener("click", function() {
+            window.location.href = "next-page.html";
+        });
+    </script>
+</body>
+</html>
